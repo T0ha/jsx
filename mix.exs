@@ -9,7 +9,7 @@ use Mix.Project
       deps: deps(Mix.env),
       package: package,
       language: :erlang,
-      erlc_options: opts(Mix.env)
+      erlc_options: [:debug_info] ++ opts(Mix.env)
     ]
   end
 
